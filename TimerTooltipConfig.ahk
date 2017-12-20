@@ -114,7 +114,7 @@ gui_validate_ok := true
 ;entered was an integer value, while some of them also ensure that it was
 ;positive. Successful validation saves the entered value to the approprate
 ;configuration variable.
-if (IsInt(gui_time_per) && gui_time_per >= 0) {
+if (IsInteger(gui_time_per) && gui_time_per >= 0) {
 	time_per := gui_time_per
 } else {
 	MsgBox, Must enter a positive, whole number for Time Per Click.
@@ -122,7 +122,7 @@ if (IsInt(gui_time_per) && gui_time_per >= 0) {
 	GuiControl, Text, gui_time_per, %gui_time_per%
 	gui_validate_ok := false
 }
-if (IsInt(gui_interval) && gui_interval >= 0) {
+if (IsInteger(gui_interval) && gui_interval >= 0) {
 	interval := gui_interval
 } else {
 	MsgBox, Must enter a positive, whole number for Update Interval.
@@ -130,7 +130,7 @@ if (IsInt(gui_interval) && gui_interval >= 0) {
 	GuiControl, Text, gui_interval, %gui_interval%
 	gui_validate_ok := false
 }
-if (IsInt(gui_tasks_per) && gui_tasks_per >= 0) {
+if (IsInteger(gui_tasks_per) && gui_tasks_per >= 0) {
 	tasks_per := gui_tasks_per
 } else {
 	MsgBox, Must enter a positive, whole number for Tasks Per Cycle.
@@ -138,7 +138,7 @@ if (IsInt(gui_tasks_per) && gui_tasks_per >= 0) {
 	GuiControl, Text, gui_tasks_per, %gui_tasks_per%
 	gui_validate_ok := false
 }
-if (IsInt(gui_cycle_time) && gui_cycle_time >= 0) {
+if (IsInteger(gui_cycle_time) && gui_cycle_time >= 0) {
 	cycle_time := gui_cycle_time
 } else {
 	MsgBox, Must enter a positive, whole number for Cycle Time.
@@ -146,7 +146,7 @@ if (IsInt(gui_cycle_time) && gui_cycle_time >= 0) {
 	GuiControl, Text, gui_cycle_time, %gui_cycle_time%
 	gui_validate_ok := false
 }
-if (IsInt(gui_reset_time) && gui_reset_time >= 0) {
+if (IsInteger(gui_reset_time) && gui_reset_time >= 0) {
 	reset_time := gui_reset_time
 } else {
 	MsgBox, Must enter a positive, whole number for Reset Time.
@@ -154,7 +154,7 @@ if (IsInt(gui_reset_time) && gui_reset_time >= 0) {
 	GuiControl, Text, gui_reset_time, %gui_reset_time%
 	gui_validate_ok := false
 }
-if (IsInt(gui_tip_xoff)) {
+if (IsInteger(gui_tip_xoff)) {
 	tip_xoff := gui_tip_xoff
 } else {
 	MsgBox, Must enter a whole number for Tooltip X Offset.
@@ -162,7 +162,7 @@ if (IsInt(gui_tip_xoff)) {
 	GuiControl, Text, gui_tip_xoff, %gui_tip_xoff%
 	gui_validate_ok := false
 }
-if (IsInt(gui_tip_yoff)) {
+if (IsInteger(gui_tip_yoff)) {
 	tip_yoff := gui_tip_yoff
 } else {
 	Msgbox, Must enter a whole number for Tooltip Y Offset.
@@ -170,7 +170,7 @@ if (IsInt(gui_tip_yoff)) {
 	GuiControl, Text, gui_tip_yoff, %gui_tip_yoff%
 	gui_validate_ok := false
 }
-if (IsInt(gui_tip_time) && gui_tip_time >= 0) {
+if (IsInteger(gui_tip_time) && gui_tip_time >= 0) {
 	tip_time := gui_tip_time
 } else {
 	MsgBox, Must enter a positive, whole number for Tooltip Lifetime.
